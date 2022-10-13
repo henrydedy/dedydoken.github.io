@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>henry</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="nim">NIM</label>
+                        <input type="number" name="nim" id="nim">
+                    </div>
+                    <div>
+                        <label for="nama">Nama</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <label for="tgl_lahir">Tanggal lahir</label>
+                        <input type="date" name="tgl_lahir" id="tgl_lahir">
+                    </div>
+                    <div>
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <input type="text" name="jenis_kelamin" id="jenis_kelamin">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>NIM</th>
+                                <th>Nama</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
